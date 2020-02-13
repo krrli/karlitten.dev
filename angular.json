@@ -30,9 +30,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "deploy": "ng b --prod --base-href https://krrli.github.io/ && npx ngh --dir=dist/docs"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -127,7 +125,10 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "baseHref": "https://krrli.github.io/",
+            "name": "Carla Iten"
+          }
         }
       }
     }
